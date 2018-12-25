@@ -10,19 +10,20 @@
 <!-- Navigation -->
 	<div class="nav-container">
 		<div class="display-nav card" >
-				<a href="#home" style="padding-left:.5rem">LOGO</a>
-				<a href="javascript:void(0)" onclick="bar_open()" style="padding-right.5rem">
+				<a href="#home" style="padding-left:.5rem"><h3>LOGO</h3></a>
+				<a href="javascript:void(0)" onclick="nav_open()">
 				<p class="icon">&#9776</p>
 				</a>
 		</div>
 	</div>
 	<nav class="item sidebar animate-left" id="mySidebar">
-	<a href="javascript:void(0)" onclick="bar_close()">Close</a>
-	<a href="#about" onclick="bar_close()">ABOUT</a>
-	<a href="#team" onclick="bar_close()">TEAM</a>
-	<a href="#work" onclick="bar_close()">WORK</a>
-	<a href="#price" onclick="bar_close()">PRICING</a>
-	<a href="#contact" onclick="bar_close()">CONTACT</a>
+	<a href="javascript:void(0)" onclick="nav_close()">CLOSE</a>
+	<a href="#home" onclick="nav_close()">HOME</a>
+	<a href="#about" onclick="nav_close()">ABOUT</a>
+	<a href="#team" onclick="nav_close()">TEAM</a>
+	<a href="#work" onclick="nav_close()">WORK</a>
+	<a href="#price" onclick="nav_close()">PRICING</a>
+	<a href="#contact" onclick="nav_close()">CONTACT</a>
 	</nav>
 <!-- Header -->
 	<div class="header-container" id="home">
@@ -31,16 +32,16 @@
 				<h1 style="line-height:3.5rem">Start something</h1>
 				<h1>that matters</h1>
 				<p>Stop wasting valuable time with projects that just isn't you.</p>
-				<p class="pad-header-items"><a href="#about"class="button-team opaq decor">Learn more and start today</a></p>
+				<p class="pad-header-items aaaa"><a href="#about"class="button-team opaq decor"><span class="fs">Learn more and start today</span></a></p>
 			</div> 
 			<div class="header_2 pad-promo-items">
-				<img width="15px" height="15px" src="img/svg/facebook.svg">
-				<img width="15px" height="15px" src="img/svg/instagram.svg">
-				<img width="15px" height="15px" src="img/svg/pinterest.svg">
-				<img width="15px" height="15px" src="img/svg/google.svg">
-				<img width="15px" height="15px" src="img/svg/skype.svg">
-				<img width="15px" height="15px" src="img/svg/linkedin.svg">
-				<img width="15px" height="15px" src="img/svg/twitter.svg">
+				<img class="size" src="img/svg/facebook.svg">
+				<img class="size" src="img/svg/instagram.svg">
+				<img class="size" src="img/svg/pinterest.svg">
+				<img class="size" src="img/svg/google.svg">
+				<img class="size" src="img/svg/skype.svg">
+				<img class="size" src="img/svg/linkedin.svg">
+				<img class="size" src="img/svg/twitter.svg">
 			</div>
 		</div>
 	</div>
@@ -86,7 +87,7 @@
 				<h3>We know design.</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
 				sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
-				<p class="box-img"><a href="#work"><img class="pad-img_1" width="16px" height="16px" src="img/svg/grid.svg">View Our Works</a></p>
+				<p class="box-img"><a href="#work"><img class="pad-img_1 size" src="img/svg/grid.svg">View Our Works</a></p>
 			</div>
 			<div class="promo_2">
 				<img  class="border-img" src="IMG/promo.jpg" style="width:100%" alt="Avatar">
@@ -97,70 +98,76 @@
 	<div class="team-container" id="team">
 		<div class="display-team pad-nav-items">
 			<div class="team_1">
-				<h2 class="text-upper">The team</h2>
+				<h1 class="text-upper">The team</h1>
 				<p>The ones who runs this company</p>
 			</div>
 			<div class="team_2">
-				<div class="box">
+			  <div class="team_2_1">
+				<div class="box founder">
 					<img src="IMG/team/vasim.jpg" style="width:100%" alt="Avatar">
 					<div class="pad-team">
 					<h3>Vasim</h3>
 					<p class="opaq">Founder</p>
 					<p>Phasellus eget enim eu lectus faucibus vestibulum. 
 					Suspendisse sodales <br>pellentesque elementum.</p>
-					<button class="button-team"><img class="pad-img" width="15px" height="15px" src="img/svg/contact.svg"> Contact</button>
+					<button class="button-team"><img class="pad-img size" src="img/svg/contact.svg"> <span>Contact</span></button>
 					</div>
 				</div>
-				<div class="box">
+				<div class="box ceo">
 					<img src="IMG/team/ibbu.jpg" style="width:100%" alt="Avatar">
 					<div class="pad-team">
 					<h3>Ibbu</h3>
 					<p class="opaq">CEO</p>
 					<p>Phasellus eget enim eu lectus faucibus vestibulum. 
 					Suspendisse sodales <br>pellentesque elementum.</p>
-					<button class="button-team"><img class="pad-img" width="15px" height="15px" src="img/svg/contact.svg"> Contact</button>
+					<button class="button-team"><img class="pad-img size" src="img/svg/contact.svg"> <span>Contact</span></button>
 					</div>
 				</div>
-				<div class="box">
+			  </div>
+			  <div class="team_2_2">
+				<div class="box md">
 					<div class="crop"><img src="IMG/team/edwin.jpg" style="width:100%" alt="Avatar"></div>
 					<div class="pad-team">
 					<h3>Edwin</h3>
 					<p class="opaq">Managing Director</p>
 					<p>Phasellus eget enim eu lectus faucibus vestibulum. 
 					Suspendisse sodales <br>pellentesque elementum.</p>
-					<button class="button-team"><img class="pad-img" width="15px" height="15px" src="img/svg/contact.svg"> Contact</button>
+					<button class="button-team"><img class="pad-img size" src="img/svg/contact.svg"> <span>Contact</span></button>
 					</div>
 				</div>
-				<div class="box">
+				<div class="box art">
 					<img src="IMG/team/mohan.jpg" style="width:100%" alt="Avatar">
 					<div class="pad-team">
 					<h3>Mohan</h3>
 					<p class="opaq">Art director</p>
 					<p>Phasellus eget enim eu lectus faucibus vestibulum. 
 					Suspendisse sodales <br>pellentesque elementum.</p>
-					<button class="button-team"><img class="pad-img" width="15px" height="15px" src="img/svg/contact.svg"> Contact</button>
+					<button class="button-team"><img class="pad-img size" src="img/svg/contact.svg"> <span>Contact</span></button>
 					</div>
 				</div>
-				<div class="box">
+			  </div>
+			  <div class="team_2_3">
+				<div class="box web">
 					<img src="IMG/team/eddhunt.jpg" style="width:100%" alt="Avatar">
 					<div class="pad-team">
 					<h3>Edward</h3>
 					<p class="opaq">Web Designer</p>
 					<p>Phasellus eget enim eu lectus faucibus vestibulum. 
 					Suspendisse sodales <br>pellentesque elementum.</p>
-					<button class="button-team"><img class="pad-img" width="15px" height="15px" src="img/svg/contact.svg"> Contact</button>
+					<button class="button-team"><img class="pad-img size" src="img/svg/contact.svg"> <span>Contact</span></button>
 					</div>
 				</div>
-				<div class="box">
+				<div class="box designer">
 					<div class="crop"><img src="IMG/team/dev.jpg" style="width:100%" alt="Avatar"></div>
 					<div class="pad-team">
 					<h3>Dev</h3>
 					<p class="opaq">Designer</p>
 					<p>Phasellus eget enim eu lectus faucibus vestibulum. 
 					Suspendisse sodales <br>pellentesque elementum.</p>
-					<button class="button-team"><img class="pad-img" width="15px" height="15px" src="img/svg/contact.svg"> Contact</button>
+					<button class="button-team"><img class="pad-img size" src="img/svg/contact.svg"> <span>Contact</span></button>
 					</div>
 				</div>
+			  </div>
 			</div>
 		</div>
 	</div>
@@ -189,26 +196,27 @@
 	<div class="work-container" id="work">
 		<div class="display-work pad-nav-items">
 			<div class="work_1">
-				<h2 class="text-upper">Our Work</h2>
+				<h1 class="text-upper">Our Work</h1>
 				<p>What we've done for you</p>
 			</div>
 			<div class="work_2">
-				<div>
-					<img src="IMG/work/mic.jpeg" style="width:100%" alt="Avatar">
-					<img src="IMG/work/phone.jpg" style="width:100%" alt="Avatar">
+				<div class="work_2_1">
+					<img src="IMG/work/mic.jpeg" alt="Avatar">
+					<img src="IMG/work/phone.jpg" alt="Avatar">
 				</div>
-				<div>
-					<img src="IMG/work/helicam.png" style="width:100%" alt="Avatar">
-					<img src="IMG/work/tab.png" style="width:100%" alt="Avatar">
+				<div class="work_2_2">
+					<img src="IMG/work/helicam.png" alt="Avatar">
+					<img src="IMG/work/tab.png" alt="Avatar">
 				</div>
-				<div>
-					<img src="IMG/work/camera.jpg" style="width:100%" alt="Avatar">
-					<img src="IMG/work/speaker.jpg" style="width:100%" alt="Avatar">
+			    <div class="work_2_3">
+					<img src="IMG/work/camera.jpg" alt="Avatar">
+					<img src="IMG/work/speaker.jpg" alt="Avatar">
 				</div>
-				<div>
-					<img src="IMG/work/typewriter.jpg" style="width:100%" alt="Avatar">
-					<img src="IMG/work/disk.png" style="width:100%" alt="Avatar">
+				<div class="work_2_4">
+					<img src="IMG/work/typewriter.jpg" alt="Avatar">
+					<img src="IMG/work/disk.png" alt="Avatar">
 				</div>
+			  </div>
 			</div>
 		</div>
 	</div>
@@ -216,7 +224,7 @@
 	<div class="skill-container" id="skill">
 		<div class="display-skill pad-nav-items">
 			<div class="skill_1">
-				<h2>Our Skills</h2>
+				<h1 class="text-upper">Our Skills</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
 				tempor incididunt ut labore et dolore.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
@@ -237,7 +245,7 @@
 	<div class="price-container" id="price">
 		<div class="display-price pad-nav-items">
 			<div class="price_1">
-				<h2 class="text-upper">Pricing</h2>
+				<h1 class="text-upper">Pricing</h1>
 				<p>Choose a price plan that fits your needs.</p>
 			</div>
 			<div class="price_2">
@@ -281,7 +289,7 @@
 	<div class="contact-container" id="contact">
 		<div class="display-contact pad-nav-items">
 			<div class="contact_1">
-				<h2 class="text-upper">Contact</h2>
+				<h1 class="text-upper">Contact</h1>
 				<p>Let's get in touch. Send us a message:</p>
 			</div>
 			<div class="contact_2">
@@ -296,7 +304,7 @@
 				<input type="textbox" placeholder="Subject">
 				<input type="textbox" placeholder="Message">
 				<br>
-				<button class="box-img bg-black text-upper"><img class="" width="15px" height="15px" src="img/svg/telegram.svg"> Send message</button>
+				<button class="box-img bg-black class="text-upper""><img class="pad-img size" src="img/svg/telegram.svg"> Send message</button>
 				</form>
 			</div>
 			<div class="contact_4">
@@ -307,16 +315,16 @@
 <!-- footer -->
 	<footer class="footer-container" style="background-color:#007668">
 		<div class="display-footer pad-promo-items">
-			<p class="box-img" style="width:30%"><a href="#home"><img class="pad-img" width="15px" height="15px" src="img/svg/arrow-up.svg">To the top</a></p>
+			<p class="box-img" style="width:30%"><a href="#home"><img class="pad-img size" src="img/svg/arrow-up.svg">To the top</a></p>
 			<br>
 			<div>
-			<img width="15px" height="15px" src="img/svg/facebook.svg">
-			<img width="15px" height="15px" src="img/svg/instagram.svg">
-			<img width="15px" height="15px" src="img/svg/pinterest.svg">
-			<img width="15px" height="15px" src="img/svg/google.svg">
-			<img width="15px" height="15px" src="img/svg/skype.svg">
-			<img width="15px" height="15px" src="img/svg/linkedin.svg">
-			<img width="15px" height="15px" src="img/svg/twitter.svg">
+			<img class="size" src="img/svg/facebook.svg">
+			<img class="size" src="img/svg/instagram.svg">
+			<img class="size" src="img/svg/pinterest.svg">
+			<img class="size" src="img/svg/google.svg">
+			<img class="size" src="img/svg/skype.svg">
+			<img class="size" src="img/svg/linkedin.svg">
+			<img class="size" src="img/svg/twitter.svg">
 			</div>
 		</div>
 	</footer>
@@ -327,7 +335,7 @@
 // Toggle between showing and hiding the sidebar when clicking the menu icon
 var mySidebar = document.getElementById("mySidebar");
 
-function bar_open() {
+function nav_open() {
     if (mySidebar.style.display === 'block') {
         mySidebar.style.display = 'none';
     } else {
@@ -336,7 +344,7 @@ function bar_open() {
 }
 
 // Close the sidebar with the close button
-function bar_close() {
+function nav_close() {
     mySidebar.style.display = "none";
 }
 </script>
